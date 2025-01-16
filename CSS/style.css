@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", serif, "Lexend";
+}
+body {
+    background-color: #0b132b
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: #03071e;
+    color: white;
+    letter-spacing: 1px;
+    max-height: 60px;
+    align-items: center;
+}
+header div span {
+    
+    font-size: 2.1em;
+    text-shadow: 4px -4px 10px white;
+    font-weight: 500;
+    
+}
+header nav a {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: .5s ease;
+
+}
+header nav a:hover, .a-home {
+    background-color: #ffffff34;
+    border-bottom: 2px solid white;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content {
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+main .content .div-img {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+main .content  .div-img img {
+    width: 100%;
+    height: 1005;
+}
+main .btn-p a{
+    background-color: #03071e;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: .3s ease;
+    margin-top: 10px;
+    display: block;
+}
+main .btn-p a:hover {
+    scale: 1.1;
+    background-color: #000000bd;
+    border-radius: 15px;
+}
+section {
+    padding: 120px 10px;
+    
+}
+section h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+.contenar,
+.contenar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+section .contenar .card {
+    background-color: #1c2541;
+    width: 30%;
+    height: 440px;
+    margin: auto;
+    border-radius: 20px;
+}
+section .contenar .card .icons,
+ .contact-me div .card .icons{
+    text-align: center;
+    font-size: 8em;
+    align-items: center;
+    color: white;
+}
+.info h3 {
+    color: white;
+    text-align: center;
+}
+.info ul {
+    margin-right: 40px;
+}
+.info ul li {
+    color: white;
+}
+.contact-me .card {
+    background-color: #1c2541;
+    width: 30%;
+    height: 270px;
+    margin: auto;
+    border-radius: 20px;
+}
+.info p {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+footer {
+    width: 100%;
+    background-color: #03071e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+footer p {
+    color: white;
+    font-size: 1.3em;   
+}
+footer p span {
+    color: blue;
+    font-weight: 700;
+}
+footer nav i {
+    font-size: 1.2em;
+    color: white;
+    padding-right: 20px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+footer nav i:hover,
+.media nav a:hover {
+    color: #1c2541;
+}
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+.media nav a {
+    font-size: 1.2em;
+    color: white;
+    padding: 0 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+@media (max-width:1023px){
+    body {
+        font-size: 13px;
+    }
+   
+    
+    section .contenar .card {
+        background-color: #1c2541;
+        width: 30%;
+        margin: auto;
+        border-radius: 20px;
+    }
+}
+@media (max-width:641px){
+    body{
+        font-size: 10px;
+    }
+    section .contenar .card {
+        height: 50%;
+    }
+}
+@media (max-width:570px){
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav {
+        display: none;
+    }
+    section .contenar .card {
+        background-color: #1c2541;
+        width: 21.25em;
+        height: auto;
+        margin: auto;
+        border-radius: 20px;
+    }
+    footer{
+        padding: 10px ;
+    }
+}
