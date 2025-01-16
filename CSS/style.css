@@ -74,6 +74,7 @@ main .btn-p a{
     transition: .3s ease;
     margin-top: 10px;
     display: block;
+    font-size: 2em;
 }
 main .btn-p a:hover {
     scale: 1.1;
@@ -123,7 +124,7 @@ section .contenar .card .icons,
 }
 .contact-me .card {
     background-color: #1c2541;
-    width: 30%;
+    min-width: 30%;
     height: 270px;
     margin: auto;
     border-radius: 20px;
@@ -179,32 +180,58 @@ footer nav i:hover,
     display: inline-block;
     
 }
-@media (max-width:1023px){
+@media (max-width:1024px){
     body {
-        font-size: 13px;
+        font-size: 17px;
     }
    
-    
+    .contact-me .card {
+        min-width: 50%;
+    }
     section .contenar .card {
         background-color: #1c2541;
-        width: 30%;
+        min-width: 50%;
         margin: auto;
         border-radius: 20px;
     }
+    .media nav a {
+        font-size: 3em;
+    }
+    main .btn-p a{
+        margin-top: 40px;
+        padding: 10px 15px;  
+        font-size: 2em;
+    }
 }
 @media (max-width:641px){
-    body{
-        font-size: 10px;
+    body {
+        font-size: 16px;
     }
     section .contenar .card {
         height: 50%;
     }
+    .media nav a {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    main .btn-p a{
+        padding: 10px 15px;  
+        font-size: 20px;
+    }
 }
 @media (max-width:570px){
+    body {
+        font-size: 10px;
+    }
     header {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    main .btn-p a{
+        font-size: 3em;
     }
     header nav {
         display: none;
