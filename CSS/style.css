@@ -17,7 +17,7 @@ header {
     background-color: #03071e;
     color: white;
     letter-spacing: 1px;
-    max-height: 60px;
+    /* max-height: 60px; */
     align-items: center;
 }
 header div span {
@@ -217,12 +217,14 @@ footer nav i:hover,
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     header div span {
         font-size: 4vw;
+        padding-right: 20px;
     }
-    header nav {
-        display: none;
+    header nav a {
+        font-size: 3vw;
     }
     main .btn-p a{
         font-size: 4vw;
