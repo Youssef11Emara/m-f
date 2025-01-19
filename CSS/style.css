@@ -22,17 +22,17 @@ header {
 }
 header div span {
     
-    font-size: 2.1em;
+    font-size: 3vw;
     text-shadow: 4px -4px 10px white;
-    font-weight: 500;
+    font-weight: bold;
     
 }
 header nav a {
     color: white;
     margin-right: 10px;
-    font-size: 1.1em;
+    font-size: 1.7vw;
     text-decoration: none;
-    transition: .5s ease;
+    transition: .3s ease;
 
 }
 header nav a:hover, .a-home {
@@ -74,7 +74,7 @@ main .btn-p a{
     transition: .3s ease;
     margin-top: 10px;
     display: block;
-    font-size: 2em;
+    font-size: 2vw;
 }
 main .btn-p a:hover {
     scale: 1.1;
@@ -86,9 +86,11 @@ section {
     
 }
 section h2{
+    font-style: italic;
     text-align: center;
     color: white;
     padding-bottom: 50px;
+    text-shadow: 4px 2px 7px #ffffff;
 }
 .contenar,
 .contenar{
@@ -101,14 +103,14 @@ section h2{
 section .contenar .card {
     background-color: #1c2541;
     width: 30%;
-    height: 440px;
+    padding-bottom: 20px;
     margin: auto;
     border-radius: 20px;
 }
 section .contenar .card .icons,
  .contact-me div .card .icons{
     text-align: center;
-    font-size: 8em;
+    font-size: 13vw;
     align-items: center;
     color: white;
 }
@@ -117,7 +119,9 @@ section .contenar .card .icons,
     text-align: center;
 }
 .info ul {
-    margin-right: 40px;
+    
+    margin: 10px 40px 0 0;
+    line-height: 1.6;
 }
 .info ul li {
     color: white;
@@ -125,14 +129,14 @@ section .contenar .card .icons,
 .contact-me .card {
     background-color: #1c2541;
     min-width: 30%;
-    height: 270px;
+    
     margin: auto;
     border-radius: 20px;
 }
 .info p {
     text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 3vw;
 }
 footer {
     width: 100%;
@@ -144,14 +148,14 @@ footer {
 }
 footer p {
     color: white;
-    font-size: 1.3em;   
+    font-size: 2vw;   
 }
 footer p span {
     color: blue;
     font-weight: 700;
 }
 footer nav i {
-    font-size: 1.2em;
+    font-size: 2vw;
     color: white;
     padding-right: 20px;
     border: 2px solid white;
@@ -162,6 +166,8 @@ footer nav i {
 footer nav i:hover,
 .media nav a:hover {
     color: #1c2541;
+    margin: 0 5px;
+    scale: 1.1;
 }
 .media {
     display: flex;
@@ -181,9 +187,7 @@ footer nav i:hover,
     
 }
 @media (max-width:1024px){
-    body {
-        font-size: 17px;
-    }
+    
    
     .contact-me .card {
         min-width: 50%;
@@ -194,52 +198,39 @@ footer nav i:hover,
         margin: auto;
         border-radius: 20px;
     }
-    .media nav a {
-        font-size: 3em;
-    }
     main .btn-p a{
         margin-top: 40px;
         padding: 10px 15px;  
-        font-size: 2em;
     }
 }
 @media (max-width:641px){
-    body {
-        font-size: 16px;
-    }
     section .contenar .card {
         height: 50%;
     }
-    .media nav a {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 40px;
-    }
     main .btn-p a{
         padding: 10px 15px;  
-        font-size: 20px;
     }
 }
 @media (max-width:570px){
-    body {
-        font-size: 10px;
-    }
+   
     header {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    main .btn-p a{
-        font-size: 3em;
+    header div span {
+        font-size: 4vw;
     }
     header nav {
         display: none;
     }
+    main .btn-p a{
+        font-size: 4vw;
+    }
     section .contenar .card {
         background-color: #1c2541;
         width: 21.25em;
-        height: auto;
+        
         margin: auto;
         border-radius: 20px;
     }
