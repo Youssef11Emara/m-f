@@ -148,7 +148,7 @@ footer {
 }
 footer p {
     color: white;
-    font-size: 2vw;   
+    font-size: 3vw;   
 }
 footer p span {
     color: blue;
@@ -218,6 +218,7 @@ footer nav i:hover,
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 10px 40px;
     }
     header div span {
         font-size: 4vw;
@@ -226,8 +227,16 @@ footer nav i:hover,
     header nav a {
         font-size: 3vw;
     }
+    .media {
+        margin-top: -100px;
+    }
     main .btn-p a{
-        font-size: 4vw;
+        margin-top: 10px;
+        font-size: 4.5vw;
+    }
+    main .content .div-img {
+        width: 140px;
+        height: 140px;
     }
     section .contenar .card {
         background-color: #1c2541;
